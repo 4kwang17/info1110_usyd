@@ -1,5 +1,5 @@
 # Goal
-This repository is for me to learn Python through simple quiz from online websites for INFO1110:
+This repository is for myself to learn Python through simple quiz from online websites for INFO1110:
 https://codingbat.com/python & 
 https://www.hackerrank.com/domains/python & 
 https://projecteuler.net/archives
