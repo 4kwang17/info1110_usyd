@@ -1,10 +1,14 @@
-def array_front9(nums):
-    if len(nums) > 3:
-        for i in range(0, 4):
-            if nums[i] == 9:
-                return True
+def string_match(a, b):
+    # set length equal to shorter length of two string
+    if len(a) < len(b):
+        length = len(a)
     else:
-        for i in range(0, len(nums)):
-            if nums[i] == 9:
-                return True
-    return False
+        length = len(b)
+
+    count = 0
+
+    for i in range(0, length - 1):
+        if a[i] + a[i + 1] == b[i] + b[i + 1]:
+            count += 1
+    
+    return count

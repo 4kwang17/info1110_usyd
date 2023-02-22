@@ -2,6 +2,7 @@ def last2(str):
     # initialise answer variable as 0
     answer = 0
 
+    # if the length of the string > 2
     if len(str) > 2:
         # string of last 2 characters of the string
         last = str[-2:]
