@@ -1,5 +1,9 @@
 def make_chocolate(small, big, goal):
-    for i in range(goal, goal - small - 1, -1):
-        if i % 5 == 0 and i // 5 <= big:
-            return goal - i
-    return -1
+    if (small + (big*5) < goal) or (goal % 5 > small):
+        return -1
+    
+    if (big*5 < goal):
+        return (goal - (big*5))
+        
+    # If big bars are larger than the goal and have enough small bars
+    return goal % 5
